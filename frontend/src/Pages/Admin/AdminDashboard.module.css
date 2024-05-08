@@ -1,0 +1,40 @@
+.notautorized {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	gap: 1rem;
+}
+.msg {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.dashboard_container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.welcome_logoutbtn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid black;
+}
+.dashboard_header {
+	font-size: 2rem;
+}
+.logout_button {
+	background-color: transparent;
+	margin-left: 10px;
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.logout_button:hover {
+	text-shadow: 1px 1px 1px #333;
+}

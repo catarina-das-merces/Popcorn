@@ -1,0 +1,40 @@
+.moviecard img {
+	width: 100%;
+}
+
+.moviecard {
+	position: relative;
+}
+
+.card_info h5 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.card_info h6 {
+	font-size: 16px;
+	font-weight: 400;
+}
+.card_info p {
+	display: flex;
+	flex-direction: column;
+}
+
+.card_info {
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #000;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.moviecard:hover .card_info {
+	display: block;
+}

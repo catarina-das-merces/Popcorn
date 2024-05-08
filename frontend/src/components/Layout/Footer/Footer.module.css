@@ -1,0 +1,11 @@
+.footer {
+	margin-bottom: 0;
+	width: 100%;
+	padding: 20px 0 0;
+	color: #333;
+	background-color: transparent;
+	text-align: center;
+}
+
+@media (max-width: 769px) {
+}

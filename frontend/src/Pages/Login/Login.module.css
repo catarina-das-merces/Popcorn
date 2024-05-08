@@ -1,0 +1,93 @@
+.login {
+	color: #333;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	color: #333;
+	font-family: "Lilita One", sans-serif;
+	font-size: 35px;
+}
+
+.login_content {
+	width: 40%;
+	background-color: #ecebef;
+	margin: 0 auto;
+	padding: 20px 78px;
+	border-radius: 8px;
+}
+
+.login_input {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	width: 95%;
+	color: #333;
+	font-size: 24px;
+	line-height: 36px;
+	padding: 8px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #333;
+}
+
+.login_psw_option {
+	color: #333;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.login_btn {
+	width: 100%;
+	color: #333;
+	display: flex;
+	padding: 19px 23px;
+	justify-content: center;
+	gap: 10px;
+	border: 1px solid #333;
+	border-radius: 8px;
+	margin-top: 20px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.login_new_option {
+	margin-top: 30px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.create_btn {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin-top: 10px;
+	color: #333;
+	padding: 10px;
+	border: 1px solid #333;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.error {
+	color: red; /* Cor do texto vermelho para indicar um erro */
+	font-size: 14px; /* Tamanho da fonte */
+	margin-top: 5px; /* Margem superior para separar a mensagem de erro dos campos de entrada */
+}
+
+@media (max-width: 769px) {
+	.login {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.login_content {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
+}

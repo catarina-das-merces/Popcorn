@@ -1,0 +1,126 @@
+.homepage {
+	min-height: 77vh;
+	padding: 20px 20px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-direction: column;
+}
+
+.filter {
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+	gap: 10px;
+}
+
+.select {
+	width: 250px;
+	margin-top: 10px;
+	padding: 15px 15px;
+	color: #333;
+	border: 1.5px solid #333;
+	border-radius: 8px;
+	background-color: transparent;
+}
+
+.cards {
+	display: grid;
+	grid-auto-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px 10px;
+	width: 100%;
+}
+
+.movies_msg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loginMessage {
+	margin: 0 auto;
+	text-align: center;
+	color: #333;
+}
+
+.loginMessage button {
+	font-size: 16px;
+	cursor: pointer;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #333;
+	background-color: transparent;
+	margin-left: 1px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination span {
+	font-size: 20px;
+}
+
+.page_btn {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+.search_box {
+	width: 50%;
+	text-align: center;
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid #333;
+	color: #333;
+	background-color: transparent;
+}
+
+.search_box::placeholder {
+	color: #333;
+}
+
+.sortby_btn {
+	color: #333;
+	width: 200px;
+	border-radius: 8px;
+	border-color: #333;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+@media (max-width: 769px) {
+	.homepage {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 20px 10px;
+	}
+	.loginMessage {
+		color: #333;
+		padding-top: 80px;
+		padding-left: 20px;
+	}
+	.filter {
+		display: flex;
+		flex-direction: column;
+		padding-top: 10px;
+	}
+	.cards {
+		grid-auto-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+	.search_box {
+		width: 90%;
+	}
+	.sortby_btn {
+		padding: 10px;
+	}
+	.pagination {
+		background-color: transparent;
+	}
+}
