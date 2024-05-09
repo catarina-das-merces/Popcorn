@@ -196,7 +196,7 @@ function MovieAdmin() {
 							<div className={styles.api_movies} key={movie._id}>
 								<img
 									className={styles.movie_img}
-									src={`https://popcorn-backend-jc0e.onrender.com/${movie.image}`}
+									src={`https://popcorn-website.onrender.com/${movie.image}`}
 								/>
 								<p>{movie.title}</p>
 								<p className={styles.description}>{movie.description}</p>
