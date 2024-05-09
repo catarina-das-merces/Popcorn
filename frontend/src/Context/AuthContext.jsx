@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
 		try {
 			const accessToken = localStorage.getItem("token");
 			const response = await fetch(
-				"https://popcorn-backend-jc0e.onrender.com/auth/users",
+				"https://popcorn-website.onrender.com/auth/users",
 				{
 					headers: {
 						"Content-Type": "application/json",
@@ -61,7 +61,7 @@ export const AuthProvider = ({ children }) => {
 	const AdminLogin = async (email, password) => {
 		try {
 			const response = await fetch(
-				"https://popcorn-backend-jc0e.onrender.com/auth/admin",
+				"https://popcorn-website.onrender.com/auth/admin",
 				{
 					method: "POST",
 					headers: {
@@ -117,7 +117,7 @@ export const AuthProvider = ({ children }) => {
 		event.preventDefault();
 		try {
 			const response = await fetch(
-				"https://popcorn-backend-jc0e.onrender.com/auth/register",
+				"https://popcorn-website.onrender.com/auth/register",
 				{
 					method: "POST",
 					headers: {
@@ -153,7 +153,7 @@ export const AuthProvider = ({ children }) => {
 		try {
 			const accessToken = localStorage.getItem("token");
 			const response = await fetch(
-				`https://popcorn-backend-jc0e.onrender.com/auth/users/${userId}`,
+				`https://popcorn-website.onrender.com/auth/users/${userId}`,
 				{
 					method: "DELETE",
 					headers: {
@@ -176,7 +176,7 @@ export const AuthProvider = ({ children }) => {
 	const handleLogin = async (email, password) => {
 		try {
 			const response = await fetch(
-				"https://popcorn-backend-jc0e.onrender.com/auth/login",
+				"https://popcorn-website.onrender.com/auth/login",
 				{
 					method: "POST",
 					headers: {
@@ -211,7 +211,7 @@ export const AuthProvider = ({ children }) => {
 		event.preventDefault();
 		try {
 			const response = await fetch(
-				"https://popcorn-backend-jc0e.onrender.com/auth/register",
+				"https://popcorn-website.onrender.com/auth/register",
 				{
 					method: "POST",
 					headers: {
@@ -242,7 +242,7 @@ export const AuthProvider = ({ children }) => {
 		try {
 			const accessToken = localStorage.getItem("token");
 			const response = await fetch(
-				`https://popcorn-backend-jc0e.onrender.com/auth/users/${selectedUser._id}`,
+				`https://popcorn-website.onrender.com/auth/users/${selectedUser._id}`,
 				{
 					method: "PUT",
 					headers: {
