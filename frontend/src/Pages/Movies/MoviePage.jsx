@@ -48,7 +48,7 @@ const MoviePage = () => {
 			<div className={styles.movie_info}>
 				<img
 					className={styles.movie_img}
-					src={`https://popcorn-backend-jc0e.onrender.com/${movie.image}`}
+					src={`https://popcorn-website.onrender.com/${movie.image}`}
 					alt={movie.title}
 				/>
 				<div className={styles.desktop_trailer}>
