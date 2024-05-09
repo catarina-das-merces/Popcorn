@@ -27,7 +27,7 @@ const Homepage = () => {
 		try {
 			const accessToken = localStorage.getItem("token");
 			const response = await fetch(
-				"https://popcorn-backend-jc0e.onrender.com/auth/users",
+				"https://popcorn-website.onrender.com/auth/users",
 				{
 					headers: {
 						"Content-Type": "application/json",
