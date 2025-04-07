@@ -12,7 +12,7 @@ const Card = ({ movie }) => {
 				{movie.image && (
 					<img
 						className={styles.movie_img}
-						src={`https://popcorn-website.onrender.com/${movie.image}`}
+						src={`https://popcorn-backend-bdos.onrender.com/${movie.image}`}
 						alt={movie.title}
 					/>
 				)}
