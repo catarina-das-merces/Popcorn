@@ -30,9 +30,10 @@ const startApp = async () => {
 		await mongoose.connect(String(MONGO));
 		console.log("sucessely connected to database");
 
-		app.listen(PORT, () => {
-			console.log(`server is ok ${PORT}`);
-		});
+		app.listen(PORT, '0.0.0.0', () => {
+  console.log(`server is ok ${PORT}`);
+});
+
 	} catch (error: unknown) {
 		if (error instanceof Error) {
 			console.error(error.message);
