@@ -32,7 +32,7 @@ export const MovieProvider = ({ children }) => {
 		try {
 			const accessToken = localStorage.getItem("token");
 			const response = await fetch(
-				"https://popcorn-website.onrender.com/api/movies",
+				"https://popcorn-backend-bdos.onrender.com/api/movies",
 				{
 					headers: {
 						Authorization: `Bearer ${accessToken}`,
@@ -63,7 +63,7 @@ export const MovieProvider = ({ children }) => {
 			formData.append("trailer", newMovieDataCreate.trailer);
 
 			const response = await fetch(
-				"https://popcorn-website.onrender.com/api/movies",
+				"https://popcorn-backend-bdos.onrender.com/api/movies",
 				{
 					method: "POST",
 					headers: {
@@ -138,7 +138,7 @@ export const MovieProvider = ({ children }) => {
 			formData.append("trailer", updateFormData.updateTrailer);
 
 			const response = await fetch(
-				`https://popcorn-website.onrender.com/api/movies/${selectedMovie._id}`,
+				`https://popcorn-backend-bdos.onrender.com/api/movies/${selectedMovie._id}`,
 				{
 					method: "PUT",
 					headers: {
@@ -173,7 +173,7 @@ export const MovieProvider = ({ children }) => {
 			const accessToken = localStorage.getItem("token");
 			const movie = movies.find((m) => m._id === movieId);
 			const response = await fetch(
-				`https://popcorn-website.onrender.com/api/movies/${movieId}`,
+				`https://popcorn-backend-bdos.onrender.com/api/movies/${movieId}`,
 				{
 					method: "DELETE",
 					headers: {
@@ -226,7 +226,7 @@ export const MovieProvider = ({ children }) => {
 				throw new Error("Movie not found");
 			}
 			const response = await fetch(
-				`https://popcorn-website.onrender.com/api/movies/${movieId}/rate`,
+				`https://popcorn-backend-bdos.onrender.com/api/movies/${movieId}/rate`,
 				{
 					method: "POST",
 					headers: {
